@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<package>
+    <name>Magedebugger</name>
+    <version>0.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Our developers sometimes fell crazy when debug on customer live store. It's very hard to debug in silence. Now our Mage Debugger extension is a real magic. You can debug and see the result in your own screen, not the screen of store.</summary>
+    <description>Our developers sometimes fell crazy when debug on customer live store. It's very hard to debug in silence. Now our Mage Debugger extension is a real magic. You can debug and see the result in your own screen, not the screen of store.
+
+Features:
++ Easy to install
++ Easy to use with a simple set of method
++ Supported method: var_dump, print, print_r, echo.
+Frontend screen url {your_base_url}magedebugger</description>
+    <notes>Version 0.1.0</notes>
+    <authors><author><name>Magestore.com</name><user>auto-converted</user><email>magestore@gmail.com</email></author></authors>
+    <date>2010-04-13</date>
+    <time>10:04:00</time>
+    <contents><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="magedebuger.xml" hash="9daf9e9eb6e5d8d96726425171713295"/></dir><dir name="template"><dir name="magedebuger"><file name="magedebuger.phtml" hash="9da03329541e3132c8394d22e96740b6"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="magedebuger.xml" hash="b56dd9a9a48c664f45170f4cea2ce6aa"/></dir><dir name="template"><dir name="magedebuger"><file name="magedebuger.phtml" hash="a516a888215fd5b6e16631b8d08d84a1"/></dir></dir></dir></dir></dir></target><target name="mageskin"><dir name="frontend"><dir name="default"><dir name="default"><dir name="css"><dir name="magestore"><file name="magedebuger.css" hash="e03f2e62658663ad91c09d8666e4f843"/></dir></dir></dir></dir></dir></target><target name="magelocal"><dir name="Magestore"><dir name="Magedebuger"><dir name="Block"><file name="Magedebuger.php" hash="b6b190796da2c28ba283d944c2586af2"/><dir name="Adminhtml"><file name="Magedebuger.php" hash="61a648b89054a5500bac753428d2a16d"/></dir></dir><dir name="controllers"><file name="IndexController.php" hash="19cb01018f6efee378b145891b96dd68"/><dir name="Adminhtml"><file name="MagedebugerController.php" hash="e69e082b8038e82eaf43bfdc33e0a919"/></dir></dir><dir name="etc"><file name="config.xml" hash="7c6951e1766c336fe01011a18c578ebd"/><file name="system.xml" hash="7d7cd995d313cc94472f8ec405876b63"/></dir><dir name="Helper"><file name="Data.php" hash="bdd3f524ea7f56fe5cc7fa647d921687"/></dir><dir name="Model"><file name="File.php" hash="b2023d1eca6ec21d436036848442ad7a"/><file name="Magedebuger.php" hash="d5fcc83ae0d27ecf52fdb6a99347e526"/><file name="Session.php" hash="6b9afb6c24791e4c6abb57d68aeda7e7"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Magestore_Magedebuger.xml" hash="96dc1d911bf04c02b2388ca58e71cad6"/></dir></target></contents>
+    <compatible/>
+    <dependencies/>
+</package>

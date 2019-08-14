@@ -1,0 +1,70 @@
+
+<?php $magebugs = $this->getMageBugs() ?>
+<div id="magebugs">
+<h2><?php echo $this->__('Mage Debugger')?></h2>
+<?php if(!count($magebugs)):?>
+<div class="note-msg">
+    <?php echo $this->__('The debug content is empty now.') ?>
+</div>
+<?php else: ?>
+<table cellpadding="0" cellspacing="0">	
+	<tr>
+		<th class="num"><?php echo $this->__('No')?></th>
+		<th class="title"><?php echo $this->__('Variable Name') ?></th>
+		<th class="value"><?php echo $this->__('Debug Value') ?></th>
+	</tr>
+	<?php $i=0 ?>
+	<?php for($j=count($magebugs);$j>0;$j--): ?>
+		<?php $bug = $magebugs[$j-1] ?>
+	<?php if(isset($bug[0]) && isset($bug[1])):?>
+		<?php $var_name = isset($bug[2]) ? $bug[2] : 'var' ?>
+		<?php $fval = $bug[0] ?>
+		<?php $value = unserialize($bug[1])?>
+		<?php $i++ ?>
+	<tr>
+		<td class="num"><?php echo $j?></td>
+		<td class="title"><?php echo $var_name?></td>
+		<td class="value">
+		<?php switch($fval) {
+				case 'var_dump':
+					var_dump($value);
+					break; 
+				case 'echo':
+					echo($value);
+					break; 
+				case 'print':
+					print($value);
+					break; 		
+				case 'print_r':
+					print_r($value);
+					break; 							
+				default:
+					var_dump($value);
+		} ?>
+		</td>
+	</tr>
+	<?php endif; ?>
+	<?php endfor; ?>
+</table>
+
+<?php endif;?>
+<div id="bound-button-clear-magebug">
+	<span><a href="<?php echo $this->getUrl('*/*/clear',array())?>">
+		<button type="button" class="form-button button">
+			<span><?php echo $this->__('Clear')?></span></a>
+		</button>
+	</a></span>
+	<span>
+	<a href="<?php echo $this->getUrl('*/*/*',array())?>">
+		<button type="button" class="form-button button">
+			<span><?php echo $this->__('Refresh')?></span></a>
+		</button>
+	</a><span>	
+</div>
+</div>
+<div id="magestore-power">
+	<div class="magestore-line right">&nbsp;</div>
+	<div class="clear fix">&nbsp;</div>
+	<span><?php echo $this->__('Power by')?></span>
+	<a href="http://www.magestore.com" target="_blank" >Magestore</a>
+</div>

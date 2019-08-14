@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/Magedebugger",
+    "type": "magento-module",
+    "license": "OSL-v3.0",
+    "homepage": "",
+    "description": "Our developers sometimes fell crazy when debug on customer live store. It's very hard to debug in silence. Now our Mage Debugger extension is a real magic. You can debug and see the result in your own screen, not the screen of store.",
+    "authors": [
+    {
+        "name": "Magestore.com",
+        "email": "magestore@gmail.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}
