@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Our developers sometimes fell crazy when debug on customer live store. It's very hard to debug in silence. Now our Mage Debugger extension is a real magic. You can debug and see the result in your own screen, not the screen of store.
